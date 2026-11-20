@@ -51,32 +51,14 @@ pnpm dev
 
 ## 5. 新建一个 App
 
-### 方式一：基于模板
+在 `apps/` 下新建目录，自行初始化项目，并确保满足 [app-conventions.md](./app-conventions.md) 中的规范。
 
-`templates/` 提供可选初始化模板，复制后重命名即可：
-
-| 模板 | 适用场景 |
-|---|---|
-| `templates/vanilla` | 原生 HTML / CSS / JavaScript，无构建步骤 |
-| `templates/vite` | 基于 Vite 的通用前端项目 |
-| `templates/vue` | Vue 3 + Vite |
-| `templates/react` | React + Vite |
-| `templates/node` | Node.js 脚本 / 服务 |
-
-```bash
-cp -r templates/vue apps/my-topic-demo
-```
-
-复制后需要：
+创建后需要：
 
 1. 将 `package.json` 的 `name` 改为与目录名一致。
-2. 按需修改依赖、配置和源码。
+2. 按需声明依赖、配置和源码。
 3. 编写该 App 自己的 `README.md`。
 4. 在根目录执行 `pnpm install` 更新锁文件。
-
-### 方式二：手动创建
-
-在 `apps/` 下新建目录，自行初始化项目。无论采用哪种方式，都必须满足 [app-conventions.md](./app-conventions.md) 中的规范。
 
 ## 6. 提交前检查
 

@@ -11,7 +11,6 @@ web-tech-playground/
 ├── apps/        # 所有独立的技术 Demo（扁平结构，不按技术栈分层）
 ├── docs/        # 仓库级设计文档与规范
 ├── scripts/     # 仓库级管理脚本
-├── templates/   # 新建 Demo 时使用的初始化模板
 ├── package.json
 ├── pnpm-workspace.yaml
 ├── .npmrc

@@ -61,8 +61,6 @@ web-tech-playground/
 │
 ├── scripts/
 │
-├── templates/
-│
 ├── package.json
 ├── pnpm-workspace.yaml
 ├── pnpm-lock.yaml
@@ -79,7 +77,6 @@ web-tech-playground/
 | `apps/` | 存放所有独立的技术 Demo |
 | `docs/` | 存放仓库级别的设计文档、规范和说明 |
 | `scripts/` | 存放仓库级别的管理脚本 |
-| `templates/` | 存放创建新 Demo 时使用的项目模板 |
 
 根目录配置文件负责管理整个 Monorepo，不承担具体 Demo 的运行职责。
 
@@ -484,30 +481,9 @@ App 的 `package.json` 中，`name` 与 App 目录名称保持一致。
 
 ---
 
-## 7. 模板与仓库级文档
+## 7. 仓库级文档
 
-### 7.1 templates
-
-`templates/` 用于存放创建新 App 时使用的初始化模板。
-
-例如：
-
-```text
-templates/
-├── vanilla/
-├── vite/
-├── vue/
-├── react/
-└── node/
-```
-
-模板只用于复制和初始化，不作为运行时依赖。
-
-创建 App 后，App 应拥有自己的完整文件和配置，不再依赖原始模板目录。
-
-模板的存在是为了减少重复初始化工作，不意味着所有 App 都必须使用模板。
-
-### 7.2 docs
+### 7.1 docs
 
 `docs/` 用于存放仓库整体的设计说明和管理规范。
 
@@ -567,7 +543,6 @@ docs/
 | App README | 每个 App 必须拥有 |
 | 锁文件 | 使用根目录统一的 `pnpm-lock.yaml` |
 | App 独立迁移 | 复制目录后可独立安装和运行 |
-| 项目模板 | 提供可选初始化模板 |
 | 后续扩展 | 按实际需求逐步增加 |
 
 ---
