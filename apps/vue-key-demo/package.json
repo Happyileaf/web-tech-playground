@@ -1,0 +1,24 @@
+{
+  "name": "vue-key-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vue 3 列表渲染 Key 差异可视化实验（真实对比无 key、index key、不稳定 key 与稳定 ID key 对 VNode Diff、DOM 复用与组件内部状态的影响）。",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-vue-next": "^0.511.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.2",
+    "vue-tsc": "^2.2.8"
+  }
+}
