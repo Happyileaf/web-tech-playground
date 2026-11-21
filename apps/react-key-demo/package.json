@@ -1,0 +1,26 @@
+{
+  "name": "react-key-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "React 19 列表渲染 Key 差异可视化实验（真实对比无 key、index key、不稳定 key 与稳定 ID key 对 Fiber Diff、DOM 复用与组件内部状态的影响）。",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^1.77.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^5.8.3",
+    "vite": "^8.3.8"
+  }
+}
